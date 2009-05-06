@@ -5,7 +5,8 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>"${TEST_PHP_EXECUTABLE:-${TM_PHP:-php}}" "$TM_BUNDLE_SUPPORT"/run-tests.php -v "$TM_FILEPATH"</string>
+	<string>"${TM_RUBY:-ruby}" -- "$TM_BUNDLE_SUPPORT/run_test.rb"
+# "${TEST_PHP_EXECUTABLE:-${TM_PHP:-php}}" "$TM_BUNDLE_SUPPORT"/run-tests.php "$TM_FILEPATH" --show-out --show-exp</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>
@@ -13,7 +14,7 @@
 	<key>name</key>
 	<string>Run Test</string>
 	<key>output</key>
-	<string>showAsTooltip</string>
+	<string>showAsHTML</string>
 	<key>scope</key>
 	<string>source.phpt</string>
 	<key>uuid</key>
