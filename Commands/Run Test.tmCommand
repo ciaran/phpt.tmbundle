@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>"${TEST_PHP_EXECUTABLE:-${TM_PHP:-php}}" "$TM_BUNDLE_SUPPORT"/run-tests.php -v "$TM_FILEPATH"</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>@r</string>
+	<key>name</key>
+	<string>Run Test</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>source.phpt</string>
+	<key>uuid</key>
+	<string>27EFFA56-ECBC-4135-A73A-419D75A0D709</string>
+</dict>
+</plist>
